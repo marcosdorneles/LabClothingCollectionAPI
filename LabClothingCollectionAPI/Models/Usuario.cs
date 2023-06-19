@@ -5,7 +5,7 @@ using LabClothingCollectionAPI.Models.Enums;
 namespace LabClothingCollectionAPI.Models
 {
 	[Table("Usuario")]
-	public class Usuario
+	public class Usuario : Pessoa
 	{
         public int Id { get; set; }
         public string email { get; set; }
