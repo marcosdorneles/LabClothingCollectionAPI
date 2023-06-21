@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LabClothingCollectionAPI.Migrations
 {
     [DbContext(typeof(Repository))]
-    [Migration("20230619022647_CriacaoTabelas")]
-    partial class CriacaoTabelas
+    [Migration("20230620234012_CorrecaoColecaoTable")]
+    partial class CorrecaoColecaoTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,10 @@ namespace LabClothingCollectionAPI.Migrations
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<string>("Usuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

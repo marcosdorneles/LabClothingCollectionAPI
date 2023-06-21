@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace LabClothingCollectionAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class CriacaoTabelas : Migration
+    public partial class CorrecaoColecaoTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,6 +20,7 @@ namespace LabClothingCollectionAPI.Migrations
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Marca = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Orcamento = table.Column<double>(type: "float", nullable: false),
+                    Usuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Ano = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Estacao = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false)

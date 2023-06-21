@@ -11,12 +11,11 @@ namespace LabClothingCollectionAPI.Models
         public string Nome { get; set; }
         public string Marca { get; set; }
         public double Orcamento { get; set; }
+        public string Usuario { get; set; }
         public DateTime Ano { get; set; }
         public Estacoes Estacao { get; set; }
         public StatusColecao Status { get; set; }
-        public Colecao()
-		{
-		}
+
 	}
 }
 
