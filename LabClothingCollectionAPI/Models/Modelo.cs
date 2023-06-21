@@ -9,6 +9,7 @@ namespace LabClothingCollectionAPI.Models
 	{
         public int Id { get; set; }
         public string Nome { get; set; }
+        public string Colecao { get; set; }
         public TipoModelo Tipo { get; set; }
         public LayoutModelo LayoutModelo { get; set; }
 
