@@ -3,8 +3,8 @@ namespace LabClothingCollectionAPI.Models.Enums
 {
 	public enum StatusUsuario
 	{
-        ATIVO,
-        INATIVO
+        ATIVO=1,
+        INATIVO=2
     }
 }
 

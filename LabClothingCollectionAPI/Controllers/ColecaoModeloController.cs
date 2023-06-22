@@ -97,7 +97,7 @@ namespace LabClothingCollectionAPI.Controllers
                 return NotFound();
             }
 
-            _repository.UsuarioColecaoModels.Remove(colecaoModelo);
+            _repository.ColecaoModelos.Remove(colecaoModelo);
             await _repository.SaveChangesAsync();
 
             return NoContent();
