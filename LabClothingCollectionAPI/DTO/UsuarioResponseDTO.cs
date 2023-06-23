@@ -12,7 +12,7 @@ namespace LabClothingCollectionAPI.DTO
         public string Genero { get; set; }
         public string Cpf { get; set; }
         public string Telefone { get; set; }
-        public string Tipo { get; set; }
+        public string TipoUsuario { get; set; }
         public string StatusUsuario { get; set; }
         [DisplayFormat(DataFormatString = "dd/MM/yyyy")]
         public DateTime DataNascimento { get; set; }
@@ -27,7 +27,7 @@ namespace LabClothingCollectionAPI.DTO
                 Telefone = usuario.Telefone,
                 DataNascimento = usuario.DataNascimento,
                 StatusUsuario = usuario.StatusUsuario.ToString(),
-                Tipo = usuario.TipoUsuario.ToString(),
+                TipoUsuario = usuario.TipoUsuario.ToString(),
             };
             return usuarioDTO;
         }
