@@ -23,7 +23,7 @@ namespace LabClothingCollectionAPI.Models
         public string Usuario { get; set; }
 
         [Required]
-        [DisplayFormat(DataFormatString = "MM/dd/yyyy")]
+        [DisplayFormat(DataFormatString = "dd/MM/yyyy")]
         public DateTime Ano { get; set; }
 
         [Required]

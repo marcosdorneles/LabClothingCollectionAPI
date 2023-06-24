@@ -107,6 +107,24 @@ namespace LabClothingCollectionAPI.Controllers
             return NoContent();
         }
 
+        [HttpPatch("{id}/status")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> PatchStatus(int id, [FromBody] StatusUsuario status)
+        {
+            var usuario = await _repository.Usuarios.FindAsync(id).ConfigureAwait(true);
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            usuario.StatusUsuario = status;
+            await _repository.SaveChangesAsync();
+
+            return Ok(usuario);
+        }
+
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
