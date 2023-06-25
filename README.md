@@ -15,7 +15,9 @@ Atributos detalhados para usuários, coleções e modelos.
 
 # Requisitos de Sistema
 .NET Framework - versão 7.0.32
+
 Entity Framework - versão 7.0.5
+
 SQL Server
 
 # Instalação
