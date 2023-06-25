@@ -23,9 +23,8 @@ SQL Server
 # Instalação
 Clone o repositório do LabClothingCollectionAPI:
 
+``` git clone https://github.com/marcosdorneles/LabClothingCollectionAPI.git ```
 
-Copy code
-git clone https://github.com/seu-usuario/LabClothingCollectionAPI.git
 Abra o projeto utilizando a IDE de sua preferência (por exemplo, Visual Studio).
 
 Restaure os pacotes NuGet utilizados pelo projeto.
@@ -33,6 +32,8 @@ Restaure os pacotes NuGet utilizados pelo projeto.
 Configure a conexão com o banco de dados SQL Server no arquivo appsettings.json.
 
 Execute o projeto.
+
+``` dotnet run ```
 
 Utilização
 Após a instalação e execução do projeto, você pode utilizar as seguintes rotas da API:
