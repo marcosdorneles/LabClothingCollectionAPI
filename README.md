@@ -30,6 +30,21 @@ git clone https://github.com/marcosdorneles/LabClothingCollectionAPI.git
 Abra o projeto utilizando a IDE de sua preferência (por exemplo, Visual Studio).
 
 Restaure os pacotes NuGet utilizados pelo projeto.
+```
+dotnet add package Microsoft.EntityFrameworkCore
+```
+```
+dotnet add package AutoMapper
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
 
 Configure a conexão com o banco de dados SQL Server no arquivo ```Program.cs```.
 
@@ -39,6 +54,14 @@ Configure a conexão com o banco de dados SQL Server no arquivo ```Program.cs```
 
 ```
 
+Adicione Migrations para o banco de dados
+```
+dotnet ef migrations Add NomeDaSuaMigration
+```
+
+```
+dotnet ef database update
+```
 
 
 
