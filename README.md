@@ -23,7 +23,9 @@ SQL Server
 # Instalação
 Clone o repositório do LabClothingCollectionAPI:
 
-``` git clone https://github.com/marcosdorneles/LabClothingCollectionAPI.git ````	
+```
+git clone https://github.com/marcosdorneles/LabClothingCollectionAPI.git
+```	
 
 Abra o projeto utilizando a IDE de sua preferência (por exemplo, Visual Studio).
 
